@@ -5,7 +5,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
-
 }
 section{
     position: relative;
@@ -22,8 +21,6 @@ section header{
     display: flex;
     justify-content: flex-end;
     font-size: 12px;
-
-
 }
 section header ul{
     display: flex;
@@ -47,6 +44,14 @@ section header ul li a{
     border-radius: 4px;
     cursor: pointer;
 }
+section .m1{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    color: rgb(255, 0, 187);
+    text-transform: uppercase;
+    font-size: 10px;
+}
  section .main{
     width: 500px;
     display: flex;
@@ -60,25 +65,26 @@ section header ul li a{
     margin-top:10px;
  }
  section .main .searchbox .search{
-    width: 85%;
+    width: 81%;
     padding: 8px;
     padding-left: 45px;
-    padding-right: 60px;
+    padding-right: 39px;
     border-radius: 30px;
     outline: none;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
  }
    section .main .searchbox  .icons{
    position: absolute;
    top: 0;
-   width: 100%;
+   width: 97%;
    display: flex;
-   padding: 9px 10px;
+   padding: 11px 10px;
    justify-content:space-between;
    align-items: center;
    pointer-events: none;
-   font-size: px;
-
+   font-size: 19px;
 }
 section .main .buttons{
     margin-top: 13px;
@@ -90,21 +96,37 @@ section .main .buttons .button{
     font-size: 8px;
     border: none;
     border-radius: 1px solid transparent;
-    cursor: pointer;
     outline: none;
-    
 }
-  @media (max-width:360px) {
+@media (max-width:480px) {
     section .main .searchbox .search{
-        width: 63%;
+        width: 77%;
+        padding-left: 41px;
+        padding-right: 42px;
+        font-size: 17px;
     }
  section .main .searchbox .icons{
-    width: 90%;
-    font-size: 8px;
+    width: 93%;
+    font-size: 15px;
+    padding: 14px 10px;
  }
-
  section header{
         width: 88%;
-        
+    }
+}
+@media (max-width:360px) {
+    section .main .searchbox .search{
+        width: 80%;
+        padding-left: 27px;
+        padding-right: 27px;
+        font-size: 12px;
+    }
+ section .main .searchbox .icons{
+    width: 93%;
+    font-size: 11px;
+    padding: 8px 10px;
+ }
+ section .header{
+        width: 88%;
     }
 }
